@@ -201,7 +201,7 @@ const projects = [
         description: "Automated lecture summarization using GPT models and YouTube APIs, reducing analysis time by 50%.",
         github: "https://github.com/abhinandan6123/YouTube-Lecture-Summarizer",
         domain: "ai",
-        image: "../images/Youtube Lecture Summarizer.webp"
+        image: "../images/YouTube Lecture Summarizer.webp"
     },
     {
         title: "Automatically Organizing PDFs Using AI",
