@@ -1,0 +1,931 @@
+/*---------------------- Responsive styles for NavBar and Hamburger menu -------------------------*/
+
+/* Small tablets (768px and below) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #2C3E50;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 0 0 8px 8px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .con {
+        justify-content: space-between;
+    }
+}
+
+/* Mobile phones (425px and below) */
+@media (max-width: 425px) {
+    .logo {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 10px;
+        width:auto;
+    }
+
+    .hamburger div {
+        width: 20px;
+        height: 2.5px;
+    }
+}
+
+/* Small phones (375px and below) */
+@media (max-width: 375px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+        width: auto;
+    }
+}
+
+/* Very small phones (320px and below) */
+@media (max-width: 320px) {
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
+
+
+
+/*------------------------------------- Responsive Design for Home page -----------------------------------*/
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .content {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        height: 80vh;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro {
+        height: 70vh;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* New Device-Specific Media Queries */
+/* iPhone SE */
+@media (max-width: 375px) and (min-height: 667px) {
+    .logo img {
+        max-width: 120px;
+        height: 80px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* iPhone XR */
+@media (max-width: 414px) and (min-height: 896px) {
+    .nav-links a {
+
+        font-size: 0.9rem; /* Smaller font size */
+        padding: 8px; /* Adjust padding to prevent overlap */
+    }
+    .nav, .intro {
+        max-width: 414px; /* continuosly changin */
+    }
+}
+
+
+/* iPhone 12 Pro */
+@media (max-width: 390px) and (min-height: 844px) {
+    .nav-links a {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .nav, .intro {
+        max-width: 380px;
+    }
+}
+
+/* iPhone 14 Pro Max */
+@media (max-width: 430px) and (min-height: 932px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .nav, .intro {
+        max-width: 100%;
+    }
+}
+
+/* Pixel 7 */
+@media (max-width: 412px) and (min-height: 846px) {
+    .btn {
+        padding: 10px 15px;
+    }
+    .nav, .intro {
+        max-width: 412px;
+    }
+}
+
+/* Samsung Galaxy S8+ */
+@media (max-width: 360px) and (min-height: 740px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Samsung Galaxy S20 Ultra */
+@media (max-width: 412px) and (min-height: 915px) {
+    .logo img {
+        max-width: 140px;
+        height: 90px;
+    }
+}
+
+
+
+/* iPad Air */
+@media (max-width: 820px) and (min-height: 1024px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+}
+
+/* Surface Pro 7 */
+@media (max-width: 912px) and (min-height: 1368px) {
+    .content {
+        max-width: 750px;
+    }
+    .nav, .intro {
+        max-width: 912px;
+    }
+}
+
+/* Surface Duo */
+@media (max-width: 540px) and (height:720px)  {
+    .nav-links {
+        width: 250px;
+    }
+    .nav, .intro {
+        max-width: 540px;
+    }
+}
+    
+
+
+/* Galaxy Z Fold 5 */
+@media (max-width: 384px) and (min-height: 840px) {
+    .intro {
+        height: 85vh;
+    }
+}
+
+/* Asus Zenbook Fold */
+@media (max-width: 1920px) and (min-height: 1280px) {
+    .intro {
+        height: 50vh;
+    }
+}
+
+/* Samsung Galaxy A51/71 */
+@media (max-width: 412px) and (min-height: 915px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Nest Hub */
+@media (max-width: 1024px) and (min-height: 600px) {
+    .logo img {
+        max-width: 100px;
+        height: 70px;
+    }
+}
+
+/* Nest Hub Max */
+@media (max-width: 1280px) and (min-height: 800px) {
+    .content {
+        max-width: 850px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------  Responsive for About section  -------------------------------------- */
+
+@media (max-width: 320px){
+
+}
+
+@media (min-width: 360px) and (max-width: 430px) and (min-height: 667px) and (max-height: 932px) {
+    /* About Section Adjustments */
+    .about-container {
+        flex-direction: column; /* Stack content vertically */
+        padding: 40px 15px; /* Adjust padding */
+        gap: 25px; /* Reduce gap between elements */
+    }
+
+    .img {
+        max-height: 300px; /* Adjust image size */
+        max-width: 300px;
+        margin-right: 10px;
+        margin-left: 20px; /* Center image */
+        margin-top: 5px;
+    }
+
+    .info {
+        max-width: 100%; /* Use full width */
+        margin-left: 0px; /* Center align */
+        text-align: center ; /* Center text */
+    }
+
+    .info h1 {
+        font-size: 1.5rem; /* Adjust font size for headings */
+        text-align: center;
+    }
+
+    .para {
+        font-size: 1rem; /* Adjust font size for paragraphs */
+    }
+
+    .btn-abt {
+        padding: 10px 20px; /* Adjust button padding */
+        margin-top: 15px;
+        
+
+    }
+
+    /* Icon Adjustments */
+    .icon-container {
+        gap: 10px; /* Adjust gap between icons */
+        flex-wrap: wrap; /* Wrap icons for better alignment */
+        
+    }
+
+    .icon {
+        width: 60px; /* Adjust icon size */
+        height: 60px;
+    }
+
+    .icon img {
+        width: 35px; /* Adjust icon image size */
+        height: 35px;
+    }
+
+    /* Certification Icon Container Adjustments */
+    .icon-container-cert {
+        gap: 20px; /* Adjust spacing between cert icons */
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    /* Specific Adjustments for Certification Icons */
+    #credly, #accredible, #google-cloud-link, #microsoft-learn-link {
+        width: 70px; 
+        
+
+
+
+    }
+}
+
+
+/* Adjustments for devices with width 1080px and height 2400px (Redmi 9 Pro Max) */
+@media (min-width: 1080px) and (max-width: 1080px) and (min-height: 2400px) and (max-height: 2400px) {
+    /* About Section Adjustments */
+    .about-container {
+        flex-direction: row; /* Keep horizontal layout */
+        padding: 60px 30px; /* Adjust padding for larger screens */
+        gap: 40px; /* Increase gap between elements */
+    }
+
+    .img {
+        max-height: 400px; /* Increase image size */
+        max-width: 400px;
+        margin-left: 50px;
+      
+    }
+
+    .info {
+        max-width: 100%; /* Full width */
+        margin-left: 20px; /* Adjust margin */
+        text-align: left; /* Align text to the left */
+    }
+
+    .info h1 {
+        font-size: 2rem; /* Increase font size for headings */
+    }
+
+    .para {
+        font-size: 1.2rem; /* Increase font size for paragraphs */
+    }
+
+    .btn-abt {
+        padding: 15px 30px; /* Increase button padding */
+        margin-top: 25px;
+    }
+
+    /* Icon Adjustments */
+    .icon-container {
+        gap: 20px; /* Increase gap between icons */
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .icon {
+        width: 80px; /* Increase icon size */
+        height: 80px;
+    }
+
+    .icon img {
+        width: 45px; /* Increase icon image size */
+        height: 45px;
+    }
+
+    /* Certification Icon Container Adjustments */
+    .icon-container-cert {
+        gap: 30px; /* Increase gap between cert icons */
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+    /* Specific Adjustments for Certification Icons */
+    #credly, #accredible, #google-cloud-link, #microsoft-learn-link {
+        width: 90px; /* Larger icons for certifications */
+    }
+}
+
+
+
+
+
+
+
+/*------------------------------------- Responsive Design for Functional Area -----------------------------------*/
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2em;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Smaller cards on mobile */
+        gap: 20px;
+    }
+
+    .card:nth-child(-n+3) {
+        padding: 15px;
+    }
+
+    .card:nth-child(n+4) {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+/*------------------------------------------------ Responsive Design for Skills Section -------------------------------- */
+@media (max-width: 768px) {
+    .container-skill {
+        padding: 20px;
+    }
+
+    .tab-buttons {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center; /* Center buttons in wrap */
+    }
+
+    .tab-buttons button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .ski h1 {
+        font-size: 36px;
+        padding: 10px 20px;
+    }
+
+    .progress-bar {
+        height: 15px; /* Smaller progress bar height on smaller screens */
+    }
+
+    .fill {
+        height: 100%;
+        background-color: #B8860B; /* Steel Gold */
+    }
+}
+
+
+
+
+
+
+
+
+/*------------------------------------------------ Responsive Design for Education section -------------------------------- */
+
+/* Tablet and Larger Screens */
+@media (min-width: 768px) {
+    .education-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+    }
+}
+
+/* Desktop and Larger Screens */
+@media (min-width: 1024px) {
+    .education-grid {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for desktops */
+    }
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------ Responsive Design for Achievement section -------------------------------- */
+
+@media (max-width: 768px) {
+    .achievements {
+        width: 95%;
+    }
+
+    .achievement-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------ Responsive Design for Open source section -------------------------------- */
+
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .open-source-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .open-source-image {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .open-source-details {
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+
+    .open-source-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .open-source-details ul li {
+        font-size: 1rem;
+    }
+
+    .volunteer-btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
+
+/* Responsive Design for Mobile Phones */
+@media (max-width: 480px) {
+
+    .heading-container {
+        text-align: center; /* Centers the entire heading container */
+        padding: 15px 5px; /* Adds padding for better spacing */
+        width:250px;
+        margin-left: -10px;
+    }
+    .section-title {
+        font-size: 1rem; /* Adjusted font size for mobile view */
+     
+        margin: 10px 0px; /* Add margin for spacing */
+    }
+    .open-source-image img {
+        width: 90%;
+    }
+
+    .open-source-details h3 {
+        font-size: 1rem;
+    }
+
+    .open-source-details ul li {
+        font-size: 0.9rem;
+    }
+
+    .volunteer-btn {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+    
+    /* Default Styles */
+#volunteer-experience {
+    display: none; /* Initially hidden */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.experience-details {
+    text-align: left; /* Align text for readability */
+}
+
+.experience-details h3 {
+    font-size: 1.6rem; /* Default heading size */
+    margin-bottom: 15px; /* Space below heading */
+    line-height: 1.5;
+}
+
+.experience-details p {
+    font-size: 1rem; /* Default paragraph size */
+    margin-bottom: 15px;
+}
+
+.experience-details ul {
+    padding-left: 20px; /* Add indentation to list */
+}
+
+.experience-details ul li {
+    font-size: 1rem;
+    line-height: 1.6; /* Spacing between list items */
+    margin-bottom: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------- Responsive Design  for certification section---------------------------*/
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+    button.cert-slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+/*---------------------------------------- Responsive Media Queries for Blogs section-----------------------------*/
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .blog-container {
+        gap: 15px;
+    }
+
+    .blog-card {
+        width: calc(33.33% - 15px); /* 3 cards per row */
+    }
+
+    .blog-details h2 {
+        font-size: 1.1rem;
+    }
+
+    .blog-details .description {
+        font-size: 0.9rem;
+    }
+}
+
+/* For large phones and smaller tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .blog-card {
+        width: calc(50% - 15px); /* 2 cards per row */
+    }
+
+    .blog-details h2 {
+        font-size: 1rem;
+    }
+
+    .blog-details .description {
+        font-size: 0.9rem;
+    }
+}
+
+/* For small phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .blog-container {
+        flex-direction: column; /* Stack cards vertically */
+        gap: 20px;
+    }
+
+    .blog-card {
+        width: 100%; /* Full-width cards */
+    }
+
+    .blog-details h2 {
+        font-size: 0.9rem;
+    }
+
+    .blog-details .description {
+        font-size: 0.85rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+ /*------------------------------------------ Responsive Design for testimonials ----------------------------------*/
+
+
+/* Small Devices (Tablets and Smaller) */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .slide p {
+        font-size: 1rem;
+    }
+
+    .slider-container {
+        width: 95%;
+    }
+
+    button.slider-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .slide {
+        padding: 15px;
+    }
+
+    .slide p {
+        font-size: 0.9rem;
+    }
+
+    .slide span {
+        font-size: 0.8rem;
+    }
+
+    button.slider-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+/*------------------------------------------- Responsive Design for contact section -----------------------------------*/
+/* @media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-logo {
+        padding: 10px;
+    }
+
+    .contact-logo img {
+        max-width: 100%;
+    }
+
+    .contact-details {
+        padding: 20px;
+    }
+
+    .contact-section {
+        height: 250px; /* Reduced height for smaller screens 
+    }
+}
+
+
+
+; */
+
+
+/* Media Query for Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .contact-logo img {
+        max-width: 60%;
+    }
+
+    .contact-details h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-details .contact-form input, 
+    .contact-details .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-details .contact-form .btn-submit {
+        font-size: 1rem;
+    }
+
+    .social-media .social-icon {
+        font-size: 1.3rem;
+    }
+}
+
+/* Media Query for Phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+   
+    .contact-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-details .contact-form input, 
+    .contact-details .contact-form textarea {
+        font-size: 0.8rem;
+    }
+    .contact-details {
+        flex: 1; /* Reduce flex to take up less space on small screens */
+    /* Reduce padding for smaller screens */
+        background-size: cover; /* Adjust background size to ensure it fits */
+        background-position: top center; /* Adjust background position */
+        height: 100vh;
+        width: 100%;
+    }
+    .contact-details .contact-form .btn-submit {
+        font-size: 0.9rem;
+    }
+
+    .social-media .social-icon {
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+  
+        .contact-section {
+            padding: 0; /* Adjust padding for smaller screens */
+            width:100%;
+        }
+    
+        .contact-container {
+            flex-direction: column; /* Stack the logo and other content vertically */
+            align-items: center; /* Center align content */
+        }
+    
+        .contact-logo img {
+            width: 100%; /* Reduce the size of the logo */
+            margin-bottom: 20px; /* Add some space below the logo */
+        }
+    
+}
+
+/* work  */
+@media (width: 360px)and (height:740px) {
+    /* Adjust dot size and position */
+    .timeline-item::before {
+        left: -30px; /* Move dot closer to the line */
+        top: 50px; /* Adjust vertical alignment */
+        width: 10px; /* Smaller dot */
+        height: 10px; /* Smaller dot */
+    }
+
+    /* Adjust line position and height */
+    .timeline-container::before {
+        top: 5px; /* Adjust line position */
+        left: -15px; /* Center the line */
+        height: 3200px; /* Shorter line */
+    }
+}
+
+@media (max-width: 1440px) and (max-height: 3040px) {
+    .timeline-item::before {
+        left: -25px; /* Adjust dot position for larger screens */
+        top: 70px; /* Slightly adjusted vertical position */
+        width: 12px; /* Slightly larger dot */
+        height: 12px; /* Slightly larger dot */
+    }
+
+    .timeline-container::before {
+        top: 10px; /* Adjust the starting position of the line */
+        left: -10px; /* Adjust line centering */
+        height: 2800px; /* More suitable line height for the S20 Ultra */
+    }
+}@media (max-width: 1080px) and (max-height: 2400px) {
+    .timeline-item::before {
+        left: -25px; /* Adjust dot position for the larger screen */
+        top: 60px; /* Adjust vertical alignment */
+        width: 12px; /* Slightly larger dot */
+        height: 12px; /* Slightly larger dot */
+    }
+
+    .timeline-container::before {
+        top: 10px; /* Adjust line start position */
+        left: -10px; /* Center the line */
+        height: 2800px; /* Adjust line height for the larger screen */
+    }
+}

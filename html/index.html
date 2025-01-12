@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="con">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Company Logo">
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#intro">HOME</a></li>
+                <li><a href="#ab-nav">ABOUT ME</a></li>
+                <li><a href="#exp">EXPERIENCE</a></li>
+                <li><a href="#pro">PROJECTS</a></li>
+                <li><a href="#bl-nav">BLOGS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="intro" id="intro">
+        <div class="content">
+            <h1>Hi! I'm <span>Venkata Abhinandan Kancharla</span></h1>
+            <h2 id="open">Open to Work as</h2>
+            <h2 id="job-title"></h2> 
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </div>
+    
+<!----------------------------------------------------- about ---------------------------------------------------->
+     <div id="ab-nav">
+    <section class="about">
+        <div class="about-container" id="about">
+            <div class="img"></div>
+            <div class="info">
+                <h1>ABOUT ME</h1>
+                <p class="para">I am Venkata Abhinandan Kancharla, a dynamic and results-oriented Machine
+                    Learning Engineer and Data Scientist with a Bachelor of Technology degree in
+                    Artificial Intelligence and Machine Learning. I bring a proven track record of successfully
+                    leading and executing data-driven projects that enhance operational efficiency and drive
+                    business growth across diverse industries, including logistics, finance, and education.</p>
+                <p><strong>Name:</strong> Venkata Abhinandan Kancharla</p>
+                <p><strong>Email:</strong> <a href="mailto:abhikancherla0@gmail.com">abhikancherla0@gmail.com</a></p>
+                <p><strong>Age:</strong>  19 Years</p>
+                <p><strong>Languages Known:</strong> English, Hindi, Telugu</p>
+                <p><strong>Phone Number:</strong> +91 6300621991</p>
+                <a href="C:\Users\LENOVO\Downloads\Freelancing works\venkat's github\port_resume.pdf" target="_blank">
+                    <button class="btn-abt">Download CV</button>
+                  </a>
+                <div class="icon-container">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/abhi6123?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon linkedin">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon">
+                    </a>
+            
+                    <!-- GitHub -->
+                    <a href="https://github.com/abhinandan6123" target="_blank" class="icon github">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub Icon">
+                    </a>
+            
+                    <!-- Medium -->
+                    <a href="https://medium.com/@abhikancherla0" target="_blank" class="icon medium">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968906.png" alt="Medium Icon">
+                    </a>
+            
+                    <!-- Behance -->
+                    <a href="https://www.behance.net/abhikancherla" target="_blank" class="icon behance">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111449.png" alt="Behance Icon">
+                    </a>
+            
+                    <!-- Email -->
+                    <a href="mailto:abhikancherla0@gmail.com" class="icon mail">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon">
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+<!---------------------------------------------- functional area --------------------------------------------->
+         <div class="functional-container">
+            <header id="key">
+                <h1 class="page-title">Key Functional Areas</h1>
+            </header>
+            <div class="card-grid">
+                <!-- Data Science & Analytics -->
+                <div class="card">
+                    <img src="../images/Datascience.jpg" alt="Data Science & Analytics">
+                    <h2 class="card-title">Data Science & Analytics</h2>
+                    <ul>
+                        <li><strong>Data Preparation:</strong> Ensures high-quality datasets for analysis.</li>
+                        <li><strong>Statistical Analysis:</strong> Identifies trends and insights.</li>
+                        <li><strong>Predictive Modeling:</strong> Forecasts outcomes for decisions.</li>
+                    </ul>
+                </div>
+                <!-- Machine Learning & AI -->
+                <div class="card">
+                    <img src="../images/ML.jpg" alt="Machine Learning & AI">
+                    <h2 class="card-title">Machine Learning & AI</h2>
+                    <ul>
+                        <li><strong>Model Development:</strong> Designs and optimizes ML algorithms.</li>
+                        <li><strong>NLP:</strong> Implements text and sentiment analysis.</li>
+                        <li><strong>Computer Vision:</strong> Enables image recognition and object detection.</li>
+                    </ul>
+                </div>
+                <!-- Software Development -->
+                <div class="card">
+                    <img src="../images/software.jpg" alt="Software Development">
+                    <h2 class="card-title">Software Development</h2>
+                    <ul>
+                        <li><strong>App Development:</strong> Builds scalable software.</li>
+                        <li><strong>API Integration:</strong> Enhances system interoperability.</li>
+                        <li><strong>Version Control:</strong> Uses Git for collaboration.</li>
+                    </ul>
+                </div>
+                <!-- Cloud Computing & Deployment -->
+                <div class="card">
+                    <img src="../images/cloud.jpg" alt="Cloud Computing & Deployment">
+                    <h2 class="card-title">Cloud Computing & Deployment</h2>
+                    <ul>
+                        <li><strong>Cloud Management:</strong> Deploys models on AWS/GCP.</li>
+                        <li><strong>Docker:</strong> Efficient application deployments.</li>
+                        <li><strong>CI/CD:</strong> Automates testing and deployment.</li>
+                    </ul>
+                </div>
+                <!-- Project Management & Leadership -->
+                <div class="card">
+                    <img src="../images/Project.jpg" alt="Project Management & Leadership">
+                    <h2 class="card-title">Project Management & Leadership</h2>
+                    <ul>
+                        <li><strong>Team Leadership:</strong> Delivers projects on time.</li>
+                        <li><strong>Agile Methods:</strong> Ensures responsiveness to change.</li>
+                        <li><strong>Stakeholder Engagement:</strong> Fosters collaboration.</li>
+                    </ul>
+                </div>
+                <!-- Business Intelligence & Strategy -->
+                <div class="card">
+                    <img src="../images/Business.jpg" alt="Business Intelligence & Strategy">
+                    <h2 class="card-title">Business Intelligence & Strategy</h2>
+                    <ul>
+                        <li><strong>Data Visualization:</strong> Supports decision-making.</li>
+                        <li><strong>Strategic Planning:</strong> Drives organizational growth.</li>
+                        <li><strong>Market Analysis:</strong> Identifies opportunities.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!-------------------------------------------------- Skills --------------------------------------------->
+<div class="container-skill">
+    <!-- Skills Heading -->
+    <div class="ski">
+        <h1 id="skill">Skills</h1>
+    </div>
+
+    <!-- Tab Buttons -->
+    <div class="tab-buttons">
+        <button onclick="showTab('technical')">Technical Skills</button>
+        <button onclick="showTab('softskills')">Soft Skills</button>
+        <button onclick="showTab('deployment')">Deployment Skills</button>
+        <button onclick="showTab('proskills')">Professional Skills</button>
+        <button onclick="showTab('domain')">Domain Skills</button>
+    </div>
+
+    <!-- Technical Skills -->
+    <div id="technical" class="progress-section">
+        <h2>Technical Skills</h2>
+        <div class="skill">
+            <p>Programming languages (Python, Java, SQL)</p>
+            <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>ML Libraries (Scikit-learn, TensorFlow, PyTorch)</p>
+            <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Data Manipulation & Analysis (Pandas, NumPy, Matplotlib, GeoPandas)</p>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Data Visualization (Tableau, Power BI)</p>
+            <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>API Development (RESTful APIs)</p>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Database Management (PostgreSQL)</p>
+            <div class="progress-bar"><div class="fill" style="width: 95%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Frontend Development (React.js)</p>
+            <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Backend Development (Flask | Python)</p>
+            <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+        </div>
+    </div>
+
+    <!-- Professional Skills -->
+    <div id="proskills" class="progress-section">
+        <h2>Professional Skills</h2>
+        <div class="skill">
+            <p>Machine Learning & AI</p>
+            <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Predictive Analytics</p>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>NLP</p>
+            <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Computer Vision</p>
+            <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Time Series Analysis</p>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Data Mining (Supervised & Unsupervised Learning, Model Deployment, Hyperparameter Tuning)</p>
+            <div class="progress-bar"><div class="fill" style="width: 95%;"></div></div>
+        </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div id="softskills" class="progress-section">
+        <h2>Soft Skills</h2>
+        <div class="skill">
+            <p>Problem-Solving</p>
+            <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Teamwork</p>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Communication</p>
+            <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Adaptability</p>
+            <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Time Management</p>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+    </div>
+
+    <!-- Deployment Skills -->
+    <div id="deployment" class="progress-section">
+        <h2>Deployment Skills</h2>
+        <div class="skill">
+            <p>Docker</p>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Heroku</p>
+            <div class="progress-bar"><div class="fill" style="width: 70%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Version Control (Git, GitHub, VS Code, Google Cloud)</p>
+            <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+        </div>
+    </div>
+
+    <!-- Domain Expertise -->
+    <div id="domain" class="progress-section">
+        <h2>Domain Expertise</h2>
+        <div class="skill">
+            <p>Finance</p>
+            <div class="progress-bar"><div class="fill" style="width: 80%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Logistics</p>
+            <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Education</p>
+            <div class="progress-bar"><div class="fill" style="width: 70%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Research</p>
+            <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+        </div>
+        <div class="skill">
+            <p>Marketing</p>
+            <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+        </div>
+    </div>
+</div>
+
+
+<!------------------------------------------------- Education ------------------------------------------------->
+        <div class="education-container">
+            <header>
+                <h1>My Educational Journey</h1>
+            </header>
+            <div class="education-grid">
+                <!-- Card 1 -->
+                <div class="education-card">
+                    <div class="card-front">
+                        <h2>2023 - 2027</h2>
+                        <img src="../images/Education.jpg" alt="Graduation Cap">
+                        <h3>Bachelor of Technology</h3><br>
+                        <p>GPA: 8.2/10</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Bachelor of Technology</h3>
+                        <p><strong>Institution:</strong> NRI Institute of Technology Guntur,Andhra Pradesh, India</p>
+                        <p><strong>Relevant Subjects:</strong> 
+                            Data Structures and Algorithms | Machine Learning | Artificial Intelligence | Data Mining | Applied Statistical
+ Operations | Linear Algebra | Differential Equations | Probability | CS Fundamentals | DSA| DBMS| Operating
+ Systems|</p>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="education-card">
+                    <div class="card-front">
+                        <h2>2021 - 2023</h2>
+                        <img src="../images/Education.jpg" alt="Graduation Cap">
+                        <h3>Intermediate (Class 12th)</h3><br>
+                        <p>GPA: 8.2/10</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Intermediate (Class 12th)</h3>
+                        <p><strong>Institution:</strong> Narayana Junior College, Guntur, Andhra Pradesh, India</p>
+                        <p><strong>Relevant Subjects:</strong> Physics, Statistics,Probability</p>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="education-card">
+                    <div class="card-front">
+                        <h2>2020 - 2021</h2>
+                        <img src="../images/Education.jpg" alt="Graduation Cap">
+                        <h3>Secondary (Class 10th)</h3><br>
+                        <p>GPA: 9.7/10</p>
+                    </div>
+                    <div class="card-back">
+                        <h3>Secondary (Class 10th)</h3>
+                        <p><strong>Institution:</strong> Krishnaveni High School, Yerragondapalem, Andhra Pradesh, India</p>
+                        <p><strong>Relevant Subjects:</strong> Mathematics,
+                            Science, Social
+                            Science, English,
+                            GK, Drawing,
+                            Hindi, Telugu,
+                            Biology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<!------------------------------------------------------ Achievements -------------------------------------------------->
+        <section class="achievements">
+            <h2 class="achievement-title">ACHIEVEMENTS</h2>
+            <section class="background-section">
+            <!-- Achievements Section -->
+            <div class="achievement-section">
+                <!-- Card 1 -->
+                <div class="achievement-card">
+                    <div class="icon">💼</div>
+                    <h2 class="counter" data-target="15">0</h2>
+                    <p>Successful Projects</p>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="achievement-card">
+                    <div class="icon">📊</div>
+                    <h2 class="counter" data-target="90">0</h2>
+                    <p>Logistics Accuracy (%)</p>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="achievement-card">
+                    <div class="icon">🎓</div>
+                    <h2 class="counter" data-target="15">0</h2>
+                    <p>Professionals Mentored</p>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="achievement-card">
+                    <div class="icon">🌟</div>
+                    <h2 class="counter" data-target="1">0</h2>
+                    <p>Open-Source Contributions</p>
+                </div>
+            </div>
+        </section>
+           
+            <div class="achievement-item">
+                <div class="icon-ach">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <div class="achievement-content">
+                    <p>"Honored as one of the Top 50 AI & ML Mentors by Topmate for exceptional leadership, impactful
+                        mentorship, and unwavering commitment to empowering learners. Acknowledged for driving excellence
+                        in guiding and inspiring the next generation of AI & ML professionals."</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <div class="icon-ach">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="achievement-content">
+                    <p>"Received a Medal from the School Management for securing top marks in Class X final exams, in recognition of academic excellence and outstanding performance."</p>
+                </div>
+            </div>
+            <div class="achievement-item">
+                <div class="icon-ach">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="achievement-content">
+                    <p>"Received the Mandal Level Quiz Competition Award representing my school while leading the team to success through strategic preparation, teamwork, and effective leadership."</p>
+                </div>
+            </div>
+        </section>
+        
+        
+<!-------------------------------------------- Open Source Contribution Section ---------------------------------------->
+
+<section id="open-source-contribution">
+    <div class="container">
+        <div class="box">
+            <div class="heading-container">
+                <h3 class="section-title">Open Source Contribution</h3>
+            </div>
+
+            <!-- Flexbox for Image on the Left and Content on the Right -->
+            <div class="open-source-content">
+                <!-- Left side: Image -->
+                <div class="open-source-image">
+                    <img src="../images/contributor.jpg" alt="Open Source Contribution Image">
+                </div>
+
+                <!-- Right side: Content and Button -->
+                <div class="open-source-details">
+                    <h3>Contributor at GirlScript Summer of Code</h3>
+                    <ul>
+                        <li>Contributed to multiple open-source projects, showcasing technical expertise, problem-solving, and collaboration.</li>
+                        <li>Developed and optimized features, improving project functionality and aligning with user needs.</li>
+                        <li>Collaborated with cross-functional teams using GitHub to streamline workflows and ensure efficient code contributions.</li>
+                        <li>Implemented innovative solutions using Python and machine learning techniques to deliver impactful results.</li>
+                        <li>Enhanced codebase quality by participating in peer reviews, debugging, and performance testing.</li>
+                        <li>Gained insights into real-world development practices, contributing to my growth as a developer and problem solver.</li>
+                    </ul>
+                    <button class="volunteer-btn" onclick="toggleVolunteerExperience()">Volunteer Experience</button>
+                </div>
+            </div>
+
+            <!-- Volunteer Experience Section (hidden by default) -->
+            <div id="volunteer-experience" class="volunteer-experience">
+                <div class="experience">
+                    <!-- <div class="experience-image">
+                        <img src="your-volunteer-image-url.jpg" alt="Volunteer Experience Image">
+                    </div> -->
+                    <div class="experience-details">
+                        <h3>Social Media and Telecalling Lead | JanaSena Party</h3>
+                        <p><strong>06/2023 - 07/2024</strong> | Mangalagiri, India</p>
+                        <ul>
+                            <li><strong>Led Social Media Campaigns and Team Coordination:</strong> Spearheaded social media efforts and managed a team of content writers, editors, and telecallers.</li>
+                            <li><strong>Pioneered Public Engagement and Telecalling Initiatives:</strong> Launched the “SHANMUKA” channel to assess public sentiment and coordinated telecalling campaigns.</li>
+                            <li><strong>Optimized Election Telecalling and Ground Reporting:</strong> Directed telecalling operations for Pithapuram constituency, collected voter data, and compiled ground reports.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!----------------------------------------------------- Experience --------------------------------------->    
+        <section id="exp">
+           
+            <header >
+               <h1 id="work">Work Experience</h1>
+           </header>
+           
+           <div class="timeline-container">
+            <!-- AutonoPros Experience -->
+            <div class="timeline-item">
+                <h3>Data Scientist</h3>
+                <h4>AutonoPros | Intern | November 2024 - February 2025 | Hyderabad, India</h4>
+                <ul>
+                    <li>Spearheaded the creation of predictive models, attaining 95% accuracy, and reducing operational costs by 
+                     15%.</li>
+                    <li> Developed and deployed scalable machine learning pipelines leveraging AWS and Docker, enhancing 
+                     workflow efficiency by 30%. </li>
+                    <li>Engineered advanced AI solutions to optimize ride demand forecasting, resulting in a 20% revenue boost. </li>
+                    <li> Consolidated and analyzed complex datasets, enabling strategic, data-driven decision-making</li>
+                </ul>
+                <button onclick="window.open('https://github.com/abhinandan6123/Real-Time-Pricing-Predictor', '_blank')">View My Work</button>
+            </div>
+             <!-- Technolabs Softwares Experience -->
+             <div class="timeline-item">
+                <h3>Machine Learning Engineer</h3>
+                <h4>Technolabs Softwares | Intern | November - December 2024 | Indore, India</h4>
+                <ul>
+                    <li> Led a transformative logistics optimization project, achieving 90% prediction accuracy and reducing delays 
+                     by  25%</li>
+                    <li>Achieved data processing time by 50% through MLOps workflows, enabling real-time analytics and faster 
+                     decision- making</li>
+                    <li> Led cross-functional teams to optimize logistics workflows, delivering high-performance predictive models. </li>
+                    <li> Levarged high-value insights through feature engineering and real-time data analytics.</li>
+                </ul>
+                <button onclick="window.open('https://github.com/abhinandan6123/Predictive_nalysis_of_Delhivery_Logistics', '_blank')">View My Work</button>
+            </div>
+        
+               <!-- OUTLIER Experience -->
+               <div class="timeline-item">
+                   <h3>Code Evaluator and Quality Analyst</h3>
+                   <h4>OUTLIER | Freelance | November 2024 | California, USA</h4>
+                   <ul>
+                       <li>Led a marketing strategy, driving a 20% increase in website traffic and a 15% boost in sales within six months.</li>
+                       <li>Optimized internal processes, reducing operational costs by 30%.</li>
+                       <li>Achieved over 90% accuracy in code evaluations and enhanced task success rates by 85%.</li>
+                   </ul>
+                  </div>
+           
+              
+               <!-- OctaNet Experience -->
+               <div class="timeline-item">
+                   <h3>Python Developer</h3>
+                   <h4>OctaNet | Intern | October - November 2024 | Rajasthan,India</h4>
+                   <ul>
+                    <li>Designed an advanced ATM Simulation System with 98% transactional accuracy and robust user reliability.</li>
+                    <li>Developed a scalable, modular architecture using OOP principles for seamless integration and extensibility.</li>
+                    <li>Built data analytics pipelines with NumPy and Pandas, improving workflow efficiency by 30% and computational accuracy.</li>
+                    <li>Automated operational processes, boosting efficiency by 30% while ensuring data consistency and scalability.</li>
+                </ul>
+                
+                   <button onclick="window.open('https://github.com/abhinandan6123/OctaNet', '_blank')">View My Work</button>
+               </div>
+           
+               <!-- CODSOFT Experience -->
+               <div class="timeline-item">
+                   <h3>Java Programmer</h3>
+                   <h4>CODSOFT | Intern | September - October 2024 |Kolkata, India</h4>
+                   <ul>
+                    <li>Developed high-precision Java applications, achieving 98–99% accuracy using core libraries for performance optimization.</li>
+                    <li>Built a secure ATM Interface System with PIN authentication and account management, ensuring data security compliance.</li>
+                    <li>Optimized software with advanced OOP techniques, enhancing adaptability and robustness.</li>
+                    <li>Reduced system errors by 90% through rigorous debugging, testing, and Java framework enhancements.</li>
+                </ul>
+                
+                   <button onclick="window.open('https://github.com/abhinandan6123/CODSOFT', '_blank')">View My Work</button>
+               </div>
+           
+               
+           </div>
+           </section>
+
+
+
+           
+
+<!------------------------------------------------- Project -------------------------------------------------------------->
+<header id="pro">
+    <h1 style="text-align: center; color: ivory;">Projects</h1>
+    <div class="filter-buttons" style="text-align: center;">
+        <button onclick="filterProjects('all')">ALL</button>
+        <button onclick="filterProjects('ai')">Artificial Intelligence</button>
+        <button onclick="filterProjects('ml')">Machine Learning</button>
+        <button onclick="filterProjects('nlp')">Natural Language Processing</button>
+    </div>
+</header>
+
+
+
+<div class="portfolio-gallery" id="portfolio-gallery">
+    <!-- Project cards will be dynamically added here -->
+</div>
+
+
+<!-- Certificates Section -->
+<section class="certificates-section">
+    <h1 class="section-title">CERTIFICATIONS</h1>
+    <div class="cert-slider-container">
+        <div class="cert-sliders">
+            <div class="cert-slide">
+                <img src="../images/cert/Ai Accenture.png" alt="Certification 1">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/Ai Ml geodata.png" alt="Certification 2">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/Automated Ai Coursera.png" alt="Certification 3">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/business Analytics Coursera.png" alt="Certification 4">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/Chatbot Coursera.png" alt="Certification 5">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/Emerging Tech.png" alt="Certification 6">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/Gen Ai Job Simulation.png" alt="Certification 7">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/Gen Ai.png" alt="Certification 8">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/IBM.png" alt="Certification 9">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/Java basics.png" alt="Certification 10">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/microsoft 365 linkedin.png" alt="Certification 11">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/Microsoft Azure.png" alt="Certification 12">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/ML Coursera.png" alt="Certification 13">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/ML model skillbadge.png" alt="Certification 14">
+            </div>
+            <div class="cert-slide">
+                <img src="../../venkat's portfolio/images/cert/Pytorch infosys.png" alt="Certification 15">
+            </div>
+            
+        </div>
+        <button class="cert-slider-btn cert-prev">&lt;</button>
+        <button class="cert-slider-btn cert-next">&gt;</button>
+    </div>
+    <div class="icon-container-cert">
+        <!-- Credly -->
+        <a href="https://www.credly.com/users/venkata-abhinandan-kancharla" target="_blank" id="credly" class="icon">
+            <img src="../images/cred.png" alt="Credly Icon">
+        </a>
+    
+        <!-- Accredible -->
+        <a href="https://www.credential.net/profile/venkataabhinandankancharla467484/wallet" target="_blank" id="accredible" class="icon">
+            <img src="../images/acc.png" alt="Accredible Icon">
+        </a>
+    
+        <!-- Google Cloud Skill Boost -->
+        <a href="https://www.cloudskillsboost.google/public_profiles/271561df-742c-415a-81ea-ea13289935d3" target="_blank" id="google-cloud-link" class="icon">
+            <img src="../images/google.jpeg" alt="Google Cloud Icon">
+        </a>
+    
+        <!-- Microsoft Learn -->
+        <a href="https://learn.microsoft.com/en-us/users/abhikancherla-1203/" target="_blank" id="microsoft-learn-link" class="icon">
+            <img src="../images/mico.png" alt="Microsoft Learn Icon">
+        </a>
+    </div>
+</section>
+
+
+
+
+<!---------------------------------------------------------- Blogs Section ------------------------- -->
+
+<div id="bl-nav">
+
+ <h1 class="blog-title" id="blogs">BLOGS</h1>
+ <section class="blog-section">
+     <div class="blog-container">
+       <!-- Blog Card 1 -->
+       <div class="blog-card" onclick="window.location.href='https://abhikancherla0.medium.com/my-journey-with-ai-from-learning-to-building-real-world-solutions-72cb699d6b35';">
+         <img src="../images/blog journey.jpg" alt="AI Journey">
+         <div class="blog-details">
+           <h2>My Journey with AI</h2>
+           <p class="meta">Post By <span>Admin</span> | Category: <span>Artificial Intelligence</span></p>
+           <p class="description">
+             Discover how I ventured into AI, from learning the basics to building real-world applications. 
+             It’s a story of growth, challenges, and achievements in technology.
+           </p>
+         </div>
+         <div class="footer">
+           <span class="views">Views: 300</span>
+           <a href="https://abhikancherla0.medium.com/my-journey-with-ai-from-learning-to-building-real-world-solutions-72cb699d6b35" class="read-more">READ MORE</a>
+         </div>
+       </div>
+   
+       <!-- Blog Card 2 -->
+       <div class="blog-card" onclick="window.location.href='https://medium.com/@abhikancherla0/detailed-road-map-for-ml-engineer-in-2025-8a89e638fe72';">
+         <img src="../images/blog ml roadmap.png" alt="ML Roadmap">
+         <div class="blog-details">
+           <h2>ML Engineer Roadmap 2025</h2>
+           <p class="meta">Post By <span>Admin</span> | Category: <span>Machine Learning</span></p>
+           <p class="description">
+             Explore the ultimate guide to becoming an ML engineer by 2025. 
+             Learn the skills, tools, and frameworks you need to thrive in the field.
+           </p>
+         </div>
+         <div class="footer">
+           <span class="likes">Likes: 120</span>
+           <a href="https://medium.com/@abhikancherla0/detailed-road-map-for-ml-engineer-in-2025-8a89e638fe72" class="read-more">READ MORE</a>
+         </div>
+       </div>
+   
+       <!-- Blog Card 3 -->
+       <div class="blog-card" onclick="window.location.href='https://abhikancherla0.medium.com/the-importance-and-future-of-artificial-intelligence-and-machine-learning-0661a9953ab3';">
+         <img src="../images/blog ai&ml.jpg" alt="AI and ML Future">
+         <div class="blog-details">
+           <h2>The Future of AI & ML</h2>
+           <p class="meta">Post By <span>Admin</span> | Category: <span>Technology</span></p>
+           <p class="description">
+             Learn about the transformative role of AI and ML in shaping the future of technology. 
+             Explore why these fields matter more than ever.
+           </p>
+         </div>
+         <div class="footer">
+           <span class="likes">Likes: 150</span>
+           <a href="https://abhikancherla0.medium.com/the-importance-and-future-of-artificial-intelligence-and-machine-learning-0661a9953ab3" class="read-more">READ MORE</a>
+         </div>
+       </div>
+       <div class="blog-card" onclick="window.location.href='https://abhikancherla0.medium.com/revolutionizing-data-science-leveraging-machine-learning-algorithms-for-predictive-analytics-f761ec6a0791';">
+             <!-- Blog Card 4 -->
+        <img src="../images/blog4.avif" alt="Data Science and ML Algorithms">
+        <div class="blog-details">
+            <h2>Revolutionizing Data Science</h2>
+            <p class="meta">Post By <span>Admin</span> | Category: <span>Data Science</span></p>
+            <p class="description">
+                Learn how machine learning algorithms are transforming predictive analytics in data science. 
+                This blog explores new methodologies for data-driven decision-making.
+            </p>
+        </div>
+        <div class="footer">
+            <span class="likes">Likes: 200</span>
+            <a href="https://abhikancherla0.medium.com/revolutionizing-data-science-leveraging-machine-learning-algorithms-for-predictive-analytics-f761ec6a0791" class="read-more">READ MORE</a>
+        </div>
+     </div>   
+    </div>
+   </section>
+</div>
+
+ 
+<!----------------------------------------------- Testimonial Section --------------------------------------------->
+        <section class="testimonials-section">
+            <h1 class="section-title">TESTIMONIALS</h1>
+            <div class="slider-container">
+              <div class="sliders">
+                <div class="slide">
+                  <p>"The Guidance & Knowledge which is acquired by Sir helped me a lot in achieving my future goals. Thank you, Sir!"</p>
+                  <span>- Lakshmi (Client)</span>
+                </div>
+                <div class="slide">
+                  <p>"Venkata’s insights into AI/ML fundamentals helped me gain a clearer understanding of current trends and practical applications in the field. His guidance was invaluable to my learning journey."</p>
+                  <span>- Sasank, AI Enthusiast (Client)</span>
+                </div>
+                <div class="slide">
+                  <p>"Working with Venkata enhanced my learning skills and provided me with a comprehensive understanding of AI concepts and their real-world applications."</p>
+                  <span>- Praveen (Client)</span>
+                </div>
+                <div class="slide">
+                  <p>"Through Venkata’s guidance, I developed a strong understanding of the AI landscape and how to approach continuous learning in this dynamic field."</p>
+                  <span>- Purna, AI & ML Learner (Client)</span>
+                </div>
+                <div class="slide">
+                  <p>"Venkata’s mentorship introduced me to essential AI/ML concepts and learning strategies, helping me build foundational knowledge to explore further opportunities."</p>
+                  <span>- Akhil, Tech Enthusiast (Client)</span>
+                </div>
+                <div class="slide">
+                  <p>"Venkata Abhinandan showcased exceptional problem-solving skills, strong communication, and team collaboration during his tenure at OctaNet."</p>
+                  <span>- Supervisor at OctaNet</span>
+                </div>
+              </div>
+              <button class="slider-btn prev">&lt;</button>
+              <button class="slider-btn next">&gt;</button>
+            </div>
+          </section>
+        
+       
+
+          <section id="services">
+            <div class="services-header">
+              <h1>Services</h1>
+            </div>
+            <div class="services-container">
+              <p class="role">Role: Career Counselor | Mentorship (AI & ML)</p>
+              <div class="connect">
+                <a href="https://topmate.io/kancharla_venkata_abhinandan/1259848" target="_blank" class="topmate-button">
+                  Connect with me via Topmate
+                </a>
+              </div>
+              <div class="services-box">
+                <div class="service-item">
+                  <i class="fas fa-user-graduate"></i>
+                  <p>Mentored 15+ aspiring AI/ML professionals to build foundational knowledge and career pathways.</p>
+                </div>
+                <div class="service-item">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                  <p>Designed beginner-friendly learning plans, breaking down AI/ML concepts into actionable steps.</p>
+                </div>
+                <div class="service-item">
+                  <i class="fas fa-file-alt"></i>
+                  <p>Enhanced mentees' resumes and online profiles to showcase skills and increase industry visibility.</p>
+                </div>
+                <div class="service-item">
+                  <i class="fas fa-briefcase"></i>
+                  <p>Provided personalized job search strategies and networking guidance for career growth.</p>
+                </div>
+                <div class="service-item">
+                  <i class="fas fa-lightbulb"></i>
+                  <p>Fostered confidence, motivation, and a proactive mindset for long-term success in AI/ML.</p>
+                </div>
+                <div class="service-item">
+                  <i class="fas fa-users"></i>
+                  <p>Organized group mentorship sessions to encourage collaborative learning and networking among peers.</p>
+                </div>
+               
+              </div>
+            </div>
+          </section>
+          
+          
+<!------------------------------------------------ Contact Section ----------------------------------------------------------->
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+        <!-- Left Side: Logo -->
+        <div class="contact-logo">
+            <img src="../images/logo.png" alt="Logo">
+        </div>
+        
+        <!-- Right Side: Contact Form -->
+        <div class="contact-details">
+            <h1>CONTACT ME</h1>
+            <form class="contact-form" id="contactForm">
+                <input type="text" name="from_name" placeholder="Your Name" required> <!-- Maps to {{from_name}} -->
+                <input type="email" name="from_email" placeholder="Your Email" required> <!-- Maps to {{from_email}} -->
+                <input type="tel" name="phone" placeholder="Your Phone Number" required> <!-- Maps to {{phone}} -->
+                <input type="text" name="subject" placeholder="Subject" required> <!-- Maps to {{subject}} -->
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea> <!-- Maps to {{message}} -->
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+            
+            
+
+            <!-- Social Media Icons -->
+            <div class="social-media">
+                <!-- <h3> Social Platform</h3> -->
+                <a href="https://www.facebook.com/kvenkatabhi.nay?mibextid=ZbWKwL" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/ahikancharla00?t=9FU9rGRWlquqaJLdbLt5VQ&s=09" target="_blank" class="social-icon">
+                    <i class="fas fa-x"></i>
+
+                </a>
+                <a href="https://www.instagram.com/abhikancherla/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+<!-------------------------------------------------------------- chat bot  ----------------------------------------------------------->
+
+<script>
+    window.GPTTConfig = {
+        uuid: "3a856a435e7f46d5bcfcb82a77ae51fc"
+    }
+</script>
+<script
+    src="https://app.gpt-trainer.com/widget-asset.min.js"
+    defer>
+    </script> 
+
+
+
+
+
+  
+           
+        <script src="../js/script.js"></script>
+</body>
+</html>
