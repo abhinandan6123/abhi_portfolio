@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
     <div class="nav">
         <div class="con">
             <div class="logo">
-                <img src="../images/logo.png" alt="Company Logo">
+                <img src="images/logo.png" alt="Company Logo">
             </div>
             <div class="hamburger" onclick="toggleMenu()">
                 <div></div>
@@ -29,13 +29,38 @@
             </ul>
         </div>
     </div>
-    <div class="intro" id="intro">
-        <div class="content">
-            <h1>Hi! I'm <span>Venkata Abhinandan Kancharla</span></h1>
-            <h2 id="open">Open to Work as</h2>
-            <h2 id="job-title"></h2> 
-            <a href="#contact" class="btn">Hire Me</a>
+    <div class="abhinandan-slider-container">
+        <div class="abhinandan-slides">
+            <!-- Slide 1: Intro Section -->
+            <div class="abhinandan-slide intro">
+                <div class="content">
+                    <h1>Hi! I'm <span>Venkata Abhinandan Kancharla</span></h1>
+                    <h2 id="open">Open to Work as</h2>
+                    <h2 id="job-title">Machine Learning Engineer</h2>
+                    <a href="#contact" class="btn">Hire Me</a>
+                    <p id="swipe">Swipe right for Objective </p>
+                </div>
+                
+            </div>
+    
+            <!-- Slide 2: Objective Section -->
+            <div class="abhinandan-slide objective">
+                <div class="content">
+                    <h2>Objective</h2>
+                    <p>
+                        Dynamic Machine Learning Engineer and Data Scientist with expertise in creating AI solutions that enhance business growth and optimize processes. 
+                        Proven success in achieving 90%+ model accuracy and 20% cost savings across industries such as logistics, finance, and education. 
+                        Passionate about building scalable AI systems, conducting cutting-edge research, and delivering actionable insights. 
+                        Skilled in predictive analytics, natural language processing (NLP), and data visualization, I aim to drive impactful, data-driven results and solve complex challenges in the AI landscape.
+                    </p>
+                    
+                </div>
+            </div>
         </div>
+    
+        <!-- Navigation Arrows -->
+        <button class="abhinandan-arrow abhinandan-left-arrow" onclick="moveAbhinandanSlide(-1)">&#10094;</button>
+        <button class="abhinandan-arrow abhinandan-right-arrow" onclick="moveAbhinandanSlide(1)">&#10095;</button>
     </div>
     
 <!----------------------------------------------------- about ---------------------------------------------------->
@@ -52,7 +77,7 @@
                     business growth across diverse industries, including logistics, finance, and education.</p>
                 <p><strong>Name:</strong> Venkata Abhinandan Kancharla</p>
                 <p><strong>Email:</strong> <a href="mailto:abhikancherla0@gmail.com">abhikancherla0@gmail.com</a></p>
-                <p><strong>Age:</strong>  19 Years</p>
+                <p><strong>Age:</strong>  24 Years</p>
                 <p><strong>Languages Known:</strong> English, Hindi, Telugu</p>
                 <p><strong>Phone Number:</strong> +91 6300621991</p>
                 <a href="port_resume.pdf" target="_blank">
@@ -100,7 +125,7 @@
             <div class="card-grid">
                 <!-- Data Science & Analytics -->
                 <div class="card">
-                    <img src="../images/Datascience.jpg" alt="Data Science & Analytics">
+                    <img src="images/Datascience.jpg" alt="Data Science & Analytics">
                     <h2 class="card-title">Data Science & Analytics</h2>
                     <ul>
                         <li><strong>Data Preparation:</strong> Ensures high-quality datasets for analysis.</li>
@@ -110,7 +135,7 @@
                 </div>
                 <!-- Machine Learning & AI -->
                 <div class="card">
-                    <img src="../images/ML.jpg" alt="Machine Learning & AI">
+                    <img src="images/ML.jpg" alt="Machine Learning & AI">
                     <h2 class="card-title">Machine Learning & AI</h2>
                     <ul>
                         <li><strong>Model Development:</strong> Designs and optimizes ML algorithms.</li>
@@ -120,7 +145,7 @@
                 </div>
                 <!-- Software Development -->
                 <div class="card">
-                    <img src="../images/software.jpg" alt="Software Development">
+                    <img src="images/software.jpg" alt="Software Development">
                     <h2 class="card-title">Software Development</h2>
                     <ul>
                         <li><strong>App Development:</strong> Builds scalable software.</li>
@@ -130,7 +155,7 @@
                 </div>
                 <!-- Cloud Computing & Deployment -->
                 <div class="card">
-                    <img src="../images/cloud.jpg" alt="Cloud Computing & Deployment">
+                    <img src="images/cloud.jpg" alt="Cloud Computing & Deployment">
                     <h2 class="card-title">Cloud Computing & Deployment</h2>
                     <ul>
                         <li><strong>Cloud Management:</strong> Deploys models on AWS/GCP.</li>
@@ -140,7 +165,7 @@
                 </div>
                 <!-- Project Management & Leadership -->
                 <div class="card">
-                    <img src="../images/Project.jpg" alt="Project Management & Leadership">
+                    <img src="images/Project.jpg" alt="Project Management & Leadership">
                     <h2 class="card-title">Project Management & Leadership</h2>
                     <ul>
                         <li><strong>Team Leadership:</strong> Delivers projects on time.</li>
@@ -150,7 +175,7 @@
                 </div>
                 <!-- Business Intelligence & Strategy -->
                 <div class="card">
-                    <img src="../images/Business.jpg" alt="Business Intelligence & Strategy">
+                    <img src="images/Business.jpg" alt="Business Intelligence & Strategy">
                     <h2 class="card-title">Business Intelligence & Strategy</h2>
                     <ul>
                         <li><strong>Data Visualization:</strong> Supports decision-making.</li>
@@ -322,7 +347,7 @@
                 <div class="education-card">
                     <div class="card-front">
                         <h2>2023 - 2027</h2>
-                        <img src="../images/Education.jpg" alt="Graduation Cap">
+                        <img src="images/Education.jpg" alt="Graduation Cap">
                         <h3>Bachelor of Technology</h3><br>
                         <p>GPA: 8.2/10</p>
                     </div>
@@ -340,7 +365,7 @@
                 <div class="education-card">
                     <div class="card-front">
                         <h2>2021 - 2023</h2>
-                        <img src="../images/Education.jpg" alt="Graduation Cap">
+                        <img src="images/Education.jpg" alt="Graduation Cap">
                         <h3>Intermediate (Class 12th)</h3><br>
                         <p>GPA: 8.2/10</p>
                     </div>
@@ -355,7 +380,7 @@
                 <div class="education-card">
                     <div class="card-front">
                         <h2>2020 - 2021</h2>
-                        <img src="../images/Education.jpg" alt="Graduation Cap">
+                        <img src="images/Education.jpg" alt="Graduation Cap">
                         <h3>Secondary (Class 10th)</h3><br>
                         <p>GPA: 9.7/10</p>
                     </div>
@@ -452,7 +477,7 @@
             <div class="open-source-content">
                 <!-- Left side: Image -->
                 <div class="open-source-image">
-                    <img src="../images/contributor.jpg" alt="Open Source Contribution Image">
+                    <img src="images/contributor.jpg" alt="Open Source Contribution Image">
                 </div>
 
                 <!-- Right side: Content and Button -->
@@ -517,7 +542,7 @@
              <!-- Technolabs Softwares Experience -->
              <div class="timeline-item">
                 <h3>Machine Learning Engineer</h3>
-                <h4>Technolabs Softwares | Intern | November - December 2024 | Indore, India</h4>
+                <h4>Technocolabs Softwares | Intern | November - December 2024 | Indore, India</h4>
                 <ul>
                     <li> Led a transformative logistics optimization project, achieving 90% prediction accuracy and reducing delays 
                      by  25%</li>
@@ -537,6 +562,7 @@
                        <li>Led a marketing strategy, driving a 20% increase in website traffic and a 15% boost in sales within six months.</li>
                        <li>Optimized internal processes, reducing operational costs by 30%.</li>
                        <li>Achieved over 90% accuracy in code evaluations and enhanced task success rates by 85%.</li>
+                       <li>Enhanced workflow efficiency, model performance, user satisfaction, and debugging reliability, achieving up to 90% improvement in quality and reducing errors by 70%.</li>
                    </ul>
                   </div>
            
@@ -579,7 +605,7 @@
 
 <!------------------------------------------------- Project -------------------------------------------------------------->
 <header id="pro">
-    <h1 style="text-align: center; color: ivory;">Projects</h1>
+    <h1 style="text-align: center;color: ivory;">Projects</h1>
     <div class="filter-buttons" style="text-align: center;">
         <button onclick="filterProjects('all')">ALL</button>
         <button onclick="filterProjects('ai')">Artificial Intelligence</button>
@@ -601,49 +627,49 @@
     <div class="cert-slider-container">
         <div class="cert-sliders">
             <div class="cert-slide">
-                <img src="../images/cert/Ai Accenture.png" alt="Certification 1">
+                <img src="images/cert/Ai Accenture.png" alt="Certification 1">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/Ai Ml geodata.png" alt="Certification 2">
+                <img src="images/cert/Ai Ml geodata.png" alt="Certification 2">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/Automated Ai Coursera.png" alt="Certification 3">
+                <img src="images/cert/Automated Ai Coursera.png" alt="Certification 3">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/business Analytics Coursera.png" alt="Certification 4">
+                <img src="images/cert/business Analytics Coursera.png" alt="Certification 4">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/Chatbot Coursera.png" alt="Certification 5">
+                <img src="images/cert/Chatbot Coursera.png" alt="Certification 5">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/Emerging Tech.png" alt="Certification 6">
+                <img src="images/cert/Emerging Tech.png" alt="Certification 6">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/Gen Ai Job Simulation.png" alt="Certification 7">
+                <img src="images/cert/Gen Ai Job Simulation.png" alt="Certification 7">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/Gen Ai.png" alt="Certification 8">
+                <img src="images/cert/Gen Ai.png" alt="Certification 8">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/IBM.png" alt="Certification 9">
+                <img src="images/cert/IBM.png" alt="Certification 9">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/Java basics.png" alt="Certification 10">
+                <img src="images/cert/Java basics.png" alt="Certification 10">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/microsoft 365 linkedin.png" alt="Certification 11">
+                <img src="images/cert/microsoft 365 linkedin.png" alt="Certification 11">
             </div>
             <div class="cert-slide">
                 <img src="../images/cert/Microsoft Azure.png" alt="Certification 12">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/ML Coursera.png" alt="Certification 13">
+                <img src="images/cert/ML Coursera.png" alt="Certification 13">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/ML model skillbadge.png" alt="Certification 14">
+                <img src="images/cert/ML model skillbadge.png" alt="Certification 14">
             </div>
             <div class="cert-slide">
-                <img src="../images/cert/Pytorch infosys.png" alt="Certification 15">
+                <img src="images/cert/Pytorch infosys.png" alt="Certification 15">
             </div>
             
         </div>
@@ -653,22 +679,22 @@
     <div class="icon-container-cert">
         <!-- Credly -->
         <a href="https://www.credly.com/users/venkata-abhinandan-kancharla" target="_blank" id="credly" class="icon">
-            <img src="../images/cred.png" alt="Credly Icon">
+            <img src="images/cred.png" alt="Credly Icon">
         </a>
     
         <!-- Accredible -->
         <a href="https://www.credential.net/profile/venkataabhinandankancharla467484/wallet" target="_blank" id="accredible" class="icon">
-            <img src="../images/acc.png" alt="Accredible Icon">
+            <img src="images/acc.png" alt="Accredible Icon">
         </a>
     
         <!-- Google Cloud Skill Boost -->
         <a href="https://www.cloudskillsboost.google/public_profiles/271561df-742c-415a-81ea-ea13289935d3" target="_blank" id="google-cloud-link" class="icon">
-            <img src="../images/google.jpeg" alt="Google Cloud Icon">
+            <img src="images/google.jpeg" alt="Google Cloud Icon">
         </a>
     
         <!-- Microsoft Learn -->
         <a href="https://learn.microsoft.com/en-us/users/abhikancherla-1203/" target="_blank" id="microsoft-learn-link" class="icon">
-            <img src="../images/mico.png" alt="Microsoft Learn Icon">
+            <img src="images/mico.png" alt="Microsoft Learn Icon">
         </a>
     </div>
 </section>
@@ -685,7 +711,7 @@
      <div class="blog-container">
        <!-- Blog Card 1 -->
        <div class="blog-card" onclick="window.location.href='https://abhikancherla0.medium.com/my-journey-with-ai-from-learning-to-building-real-world-solutions-72cb699d6b35';">
-         <img src="../images/blog journey.jpg" alt="AI Journey">
+         <img src="images/blog journey.jpg" alt="AI Journey">
          <div class="blog-details">
            <h2>My Journey with AI</h2>
            <p class="meta">Post By <span>Admin</span> | Category: <span>Artificial Intelligence</span></p>
@@ -702,7 +728,7 @@
    
        <!-- Blog Card 2 -->
        <div class="blog-card" onclick="window.location.href='https://medium.com/@abhikancherla0/detailed-road-map-for-ml-engineer-in-2025-8a89e638fe72';">
-         <img src="../images/blog ml roadmap.png" alt="ML Roadmap">
+         <img src="images/blog ml roadmap.png" alt="ML Roadmap">
          <div class="blog-details">
            <h2>ML Engineer Roadmap 2025</h2>
            <p class="meta">Post By <span>Admin</span> | Category: <span>Machine Learning</span></p>
@@ -719,7 +745,7 @@
    
        <!-- Blog Card 3 -->
        <div class="blog-card" onclick="window.location.href='https://abhikancherla0.medium.com/the-importance-and-future-of-artificial-intelligence-and-machine-learning-0661a9953ab3';">
-         <img src="../images/blog ai&ml.jpg" alt="AI and ML Future">
+         <img src="images/blog ai&ml.jpg" alt="AI and ML Future">
          <div class="blog-details">
            <h2>The Future of AI & ML</h2>
            <p class="meta">Post By <span>Admin</span> | Category: <span>Technology</span></p>
@@ -735,7 +761,7 @@
        </div>
        <div class="blog-card" onclick="window.location.href='https://abhikancherla0.medium.com/revolutionizing-data-science-leveraging-machine-learning-algorithms-for-predictive-analytics-f761ec6a0791';">
              <!-- Blog Card 4 -->
-        <img src="../images/blog4.avif" alt="Data Science and ML Algorithms">
+        <img src="images/blog4.avif" alt="Data Science and ML Algorithms">
         <div class="blog-details">
             <h2>Revolutionizing Data Science</h2>
             <p class="meta">Post By <span>Admin</span> | Category: <span>Data Science</span></p>
@@ -838,7 +864,7 @@
     <div class="contact-container">
         <!-- Left Side: Logo -->
         <div class="contact-logo">
-            <img src="../images/logo.png" alt="Logo">
+            <img src="images/logo.png" alt="Logo">
         </div>
         
         <!-- Right Side: Contact Form -->
@@ -893,6 +919,6 @@
 
   
            
-        <script src="../js/script.js"></script>
+        <script src="js/script.js"></script>
 </body>
 </html>

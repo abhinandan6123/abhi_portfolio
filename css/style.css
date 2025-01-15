@@ -102,13 +102,37 @@ html {
 }
 
 
-/*----------------------------------------------- Intro Section ---------------------------------------------------*/
+/* Slider Container */
+.abhinandan-slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 400px; /* Adjust height based on your needs */
+}
+
+/* Slider Content */
+.abhinandan-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.abhinandan-slide {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Intro Section */
 .intro {
     background-image: url(../images/intro2.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
-    width:auto;
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,11 +200,122 @@ h1 span {
     z-index: 1;
 }
 
+/* Objective Section */
+/* Objective Section */
+.objective {
+    background-image: url("../images/intro2.jpg"); /* Use same image or different one */
+    background-size: cover;
+    background-position: center;
+    height: 700px; /* Adjust height as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.objective .content {
+    max-width: 800px;
+    z-index: 2;
+    padding: 20px;
+    margin-top: -350px;
+}
+
+.objective h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    color: #B8860B;
+    display: flex;
+    align-items: center;  /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    height: 100%; /* Ensure the height of the parent container allows for centering */
+}
 
 
+.objective p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: #F8F8F8;
+}
 
+.objective::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
 
+/* Button Styling (if applicable) */
+.objective .btn {
+    display: inline-block;
+    background-color: #B8860B;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
 
+.objective .btn:hover {
+    background-color: #b2902c;
+    transform: scale(1.05);
+}
+
+/* Navigation Arrows */
+.abhinandan-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.abhinandan-left-arrow {
+    left: 10px;
+}
+
+.abhinandan-right-arrow {
+    right: 10px;
+}
+
+/* Slider Fixes */
+.abhinandan-slides-container {
+    overflow: hidden; /* Ensures only one slide is visible */
+}
+
+.abhinandan-slides {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.abhinandan-slide {
+    flex: 0 0 100%; /* Ensures each slide takes up 100% of the container */
+    box-sizing: border-box;
+}
+
+#swipe{
+    color: #B8860B;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 20px;
+}
 /*----------------------------------------------- About Section -----------------------------------------*/
 
     #ab-nav {
@@ -637,30 +772,30 @@ header h1 {
 }
 
 /* Front Side Styling */
-.card-front {
+.education-card .card-front {
     transform: rotateY(0deg);
     z-index: 2; /* Ensure it's visible by default */
 }
 
-.card-front h2 {
+.education-card .card-front h2 {
     font-size: 1.2rem;
     color: #2C3E50; /* Midnight Blue */
     margin-bottom: 10px;
 }
 
-.card-front img {
+.education-card .card-front img {
     width: 60%; /* Enlarged Image */
     height: auto;
     margin-bottom: 10px;
 }
 
-.card-front h3 {
+.education-card .card-front h3 {
     font-size: 1rem;
     color: #B8860B; /* Steel Gold */
     margin-bottom: 5px;
 }
 
-.card-front p {
+.education-card .card-front p {
     font-size: 0.9rem;
     color: #2C3E50;
     font-weight: bold; /* Highlight GPA */
@@ -669,34 +804,24 @@ header h1 {
 }
 
 /* Back Side Styling */
-.card-back {
+.education-card .card-back {
     transform: rotateY(-180deg);
     background-color: #F8F8F8; /* Ivory White */
     text-align: left;
     z-index: 1; /* Stack below the front */
 }
 
-.card-back h3 {
+.education-card .card-back h3 {
     font-size: 1.2rem;
     color: #2C3E50; /* Midnight Blue */
     margin-bottom: 10px;
 }
 
-.card-back p {
+.education-card .card-back p {
     font-size: 0.9rem;
     color: #7F8C8D; /* Graphite Gray */
     margin-bottom: 5px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*--------------------------------------------------- Achievements ----------------------------------------------*/
@@ -1256,7 +1381,7 @@ button:hover {
     top: 10px;
     left: -20px;
     width: 3px;
-    height: 1300px;
+    height: 1420px;
     background-color: #B8860B; /* Steel Gold */
     z-index: 0; /* Line sits below the dots */
 }
@@ -1320,25 +1445,21 @@ button:hover {
     padding: 30px 0;
     margin-top: -30px;
     scroll-margin-top: 50px;
-
 }
-
 
 .filter-buttons button {
     margin: 5px;
     padding: 10px 15px;
-    background-color:#B8860B;
+    background-color: #B8860B;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-   
 }
 
 .filter-buttons button:hover {
     background-color: #b2902c;
-     transform: scale(1.05);
-    
+    transform: scale(1.05);
 }
 
 .portfolio-gallery {
@@ -1352,31 +1473,62 @@ button:hover {
 .project-card {
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden;
     width: 300px;
+    height: 350px; /* Set consistent height for flipping effect */
     background-color: #fff;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    perspective: 1000px; /* Enables 3D effect for flip */
+    overflow: hidden;
 }
 
-.project-card img {
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+
+.project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, 
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-front {
+    background-color: #fff;
+    color: #333;
+}
+
+.card-front img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
-.project-card h3 {
+.card-front h3 {
     margin: 10px 0;
+    margin-top: 10px;
     color: #333;
 }
 
-.project-card p {
+.card-front p {
     margin: 0 10px 15px;
+    margin-top: 10px;
     font-size: 0.9rem;
     color: #555;
 }
 
-.project-card a {
+.card-front a {
     display: inline-block;
     margin-bottom: 15px;
     padding: 8px 12px;
@@ -1387,16 +1539,53 @@ button:hover {
     font-size: 0.9rem;
 }
 
-.project-card a:hover {
+.card-front a:hover {
     background-color: #b2902c;
 }
 
+.card-back {
+    background-color: #2C3E50;
+    color: #F8F8F8;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.card-back h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
 
+.card-back ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
 
+.card-back ul li {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
 
+.card-back a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 12px;
+    background-color: #b2902c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
 
-
+.card-back a:hover {
+    background-color: #F1C40F;
+}
 
 
 /*-------------------------------------------------- Certificates Section -------------------------------------*/
