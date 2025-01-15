@@ -1084,21 +1084,7 @@ button:hover {
     align-items: flex-start;
 }
 
-/* .experience-image {
-    flex-basis: 30%;
-} 
 
-.experience-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease-in-out;
-}
-
-.experience-image img:hover {
-    transform: scale(1.05);
-}
-*/
 .experience-details {
     flex-basis: 65%;
     padding-left: 20px;
@@ -2078,7 +2064,7 @@ filter: brightness(1.2); /* Brighten the icon */
 
 #contact {
     padding-top: 140px; /* Adds space above the contact section */
-    scroll-margin-top: -20px;
+    scroll-margin-top: -150px;
     bottom:20px;
 }
 
@@ -2101,6 +2087,7 @@ filter: brightness(1.2); /* Brighten the icon */
     height: 100%;
     background: linear-gradient(135deg, #34495E, #2C3E50);
     overflow: hidden;
+    margin: 0;
 }
 
 /* Left Side: Logo */
@@ -2212,7 +2199,82 @@ filter: brightness(1.2); /* Brighten the icon */
 }
 
 
+/* footer */
 
+.footer-copyright {
+    background-color: #2C3E50; /* Midnight Blue background */
+    color: #F8F8F8; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 98.7%;
+    margin-top: -10px;
+    margin-left: 10px;
+    
+}
+#foo-link{
+    color: #B8860B;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.footer-copyright p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.footer-copyright p:first-child {
+    font-weight: bold; /* Bold for the main copyright text */
+}
+
+.footer-copyright p:last-child {
+    font-style: italic; /* Italic for the designer attribution */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-copyright {
+        font-size: 0.9rem; /* Slightly smaller text for smaller screens */
+        padding: 15px 0; /* Reduced padding for small screens */
+        width:100%;
+    }
+
+    .footer-copyright p {
+        margin: 8px 0; /* Slightly more space between paragraphs on small screens */
+    }
+}
   
 
-   
+   /* Responsive Design */
+@media (max-width: 768px) {
+    .footer-copyright {
+        font-size: 0.9rem; /* Slightly smaller text for smaller screens */
+        padding: 15px 0; /* Reduced padding */
+        width: 100%; /* Ensure it takes full width on small screens */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .footer-copyright p {
+        margin: 10px 0; /* Increase space between paragraphs on small screens */
+    }
+
+    #foo-link {
+        font-size: 0.9rem; /* Slightly smaller font for links */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-copyright {
+        font-size: 0.8rem; /* Smaller font size for very small screens */
+        padding: 10px 0; /* Further reduced padding */
+    }
+
+    .footer-copyright p {
+        margin: 12px 0; /* Increase space between paragraphs on very small screens */
+    }
+
+    #foo-link {
+        font-size: 0.8rem; /* Further reduce font size for links */
+    }
+}

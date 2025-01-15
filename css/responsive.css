@@ -707,31 +707,62 @@ h1 span {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-.experience-details {
-    text-align: left; /* Align text for readability */
+
+}
+/* For Tablets and Small Screens */
+@media (max-width: 1024px) {
+    .experience {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center; /* Center align content */
+    }
+
+    .experience-details {
+        flex-basis: 100%; /* Take full width */
+        padding-left: 0; /* Remove padding */
+        margin-bottom: 20px; /* Add margin to separate items */
+    }
+
+    .experience-details h3 {
+        font-size: 1.4rem; /* Adjust heading size */
+    }
+
+    .experience-details p {
+        font-size: 1rem; /* Adjust paragraph text */
+    }
+
+    .experience-details ul li {
+        font-size: 1rem; /* Adjust list items size */
+    }
 }
 
-.experience-details h3 {
-    font-size: 1.6rem; /* Default heading size */
-    margin-bottom: 15px; /* Space below heading */
-    line-height: 1.5;
+/* For Mobile Screens */
+@media (max-width: 768px) {
+    .experience-details h3 {
+        font-size: 1.2rem; /* Smaller heading size for mobile */
+    }
+
+    .experience-details p {
+        font-size: 0.9rem; /* Smaller paragraph text */
+    }
+
+    .experience-details ul li {
+        font-size: 0.9rem; /* Smaller list items for mobile */
+    }
 }
 
-.experience-details p {
-    font-size: 1rem; /* Default paragraph size */
-    margin-bottom: 15px;
-}
+/* For Very Small Screens (Phones in portrait mode) */
+@media (max-width: 480px) {
+    .experience-details h3 {
+        font-size: 1rem; /* Even smaller heading */
+    }
 
-.experience-details ul {
-    padding-left: 20px; /* Add indentation to list */
-}
+    .experience-details p {
+        font-size: 0.8rem; /* Even smaller paragraph text */
+    }
 
-.experience-details ul li {
-    font-size: 1rem;
-    line-height: 1.6; /* Spacing between list items */
-    margin-bottom: 10px;
-}
-
+    .experience-details ul li {
+        font-size: 0.8rem; /* Smaller list items */
+    }
 }
 
 
