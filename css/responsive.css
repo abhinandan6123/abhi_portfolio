@@ -273,37 +273,8 @@ h1 span {
 
 /* Media Queries for Responsiveness */
 
-/* Large Screens (Desktops) */
-@media (min-width: 1024px) {
-    .intro {
-        height: 500px;
-    }
 
-    .intro h1 {
-        font-size: 4rem;
-    }
 
-    .intro #open, .intro #job-title {
-        font-size: 2rem;
-    }
-
-    .objective {
-        height: 800px;
-    }
-
-    .objective h2 {
-        font-size: 3rem;
-    }
-
-    .objective p {
-        font-size: 1.5rem;
-    }
-
-    .abhinandan-arrow {
-        font-size: 3rem;
-        padding: 15px;
-    }
-}
 
 /* Medium Screens (Tablets) */
 @media (max-width: 1024px) {
